@@ -1,0 +1,124 @@
+@import url('flatpickr/dist/flatpickr.min.css');
+@import url('izitoast/dist/css/iziToast.min.css');
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-btn {
+  animation: fadeInUp 0.8s ease forwards;
+}
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-btn:hover {
+  background-color: #1976d2;
+  transform: scale(1.1);
+}
+
+.home-btn:active {
+  transform: scale(0.95);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1976d2;
+  display: block;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+#datetime-picker {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #90caf9;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#datetime-picker:focus {
+  border-color: #1976d2;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
